@@ -22,7 +22,6 @@ ul {
   padding: 38px 60px;
   color: #fffff9;
   font-size: 30px;
-
 }
 
 .header-right {
@@ -52,20 +51,21 @@ ul {
   background-color: #7b5544;
 }
 
-.footer-left {
+.footer {
   padding: 30px;
 }
 
-.footer-left ul {
-  text-align: center;
+.footer-top {
+  float: left;
+  width: 600px;
+  padding: 15px 400px; 
 }
 
-.footer-left li {
+.footer-top li {
   float: left;
-  /*文字の色を#808080にしてください*/
+  margin-right: 40px;
+  margin-bottom: 5px;
   color: #fffff9;
-  margin-left: 40px;
-  display: inline;
 }
 
 .like-box {
@@ -90,7 +90,7 @@ ul {
 }
 
 .contents {
-  height: 600px;
+  height: 700px;
   width: 900px;
   float: left;
   padding: 30px;
@@ -101,31 +101,17 @@ ul {
 }
 
 .contents-item {
-  height: 100px;
+  padding-left: 100px
+  height: 140px;
   border: 1px solid #dcdcdc;
 }
 
-
-.contents-top {
-  height: 300px;
-  color: #808080;
+.contents-item h1 {
+  color: #7b5544;
+  margin-left: 30px;
 }
 
-.contents-top h1 {
-  margin-bottom: 30px;
+.contents-item p {
+  margin-left: 50px;
 }
 
-.contents-top-item {
-  width: 270px;
-  float: left;
-  padding-right: 30px;
-}
-
-.contents-top-item h2 {
-  margin-bottom: 10px;
-}
-
-
-.contents-bottom h1 {
-  margin-bottom: 30px;
-}
