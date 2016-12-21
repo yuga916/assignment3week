@@ -57,7 +57,7 @@ ul {
 
 .footer-top {
   float: left;
-  width: 600px;
+  width: 400px;
   padding: 15px 400px; 
 }
 
@@ -90,7 +90,7 @@ ul {
 }
 
 .contents {
-  height: 700px;
+  height: 900px;
   width: 900px;
   float: left;
   padding: 30px;
@@ -111,7 +111,19 @@ ul {
   margin-left: 30px;
 }
 
+.contents-item img {
+  color: #7b5544;
+  margin-left: 40px;
+  float: left;
+}
+
+.contents-item h2 {
+  color: #7b5544;
+  margin-top: 48px;
+  margin-left: 80px;
+}
+
 .contents-item p {
-  margin-left: 50px;
+  margin-left: 700px;
 }
 

@@ -1,45 +1,50 @@
+<?php
+$time = date('H');
+
+?>
+
+
 <!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Cafestudy</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Cafe Diary</title>
+  <link rel="stylesheet" href="webroot/css/style.css">
   <!-- fontawesome -->
   <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>
   <div class="header">
-    <div class="header-left"><i class="fa fa-coffee" aria-hidden="true"></i>&nbsp;Cafestudy</div>
+    <div class="header-left"><i class="fa fa-coffee" aria-hidden="true"></i>&nbsp;Cafe Diary</div>
     <div class="header-right">
-      
-        <p>coffee calendar</p>
-      
+        
+          <p>coffee calendar</p>
+        
     </div>
   </div>
 
   <div class="main">
     <div class="sidebar">
-      <p>こんにちはゲストさん</p>
+    <?php  if (6 <= $time && $time <= 11) : // 6時～11時の時間帯のとき ?>
+     <p>おはようございます
+     <?php  elseif (12 <= $time && $time <= 18) : // 12時〜20時の時間帯のとき ?>
+     <p>こんにちは
+     <?php  else : // それ以外の時間帯のとき ?>
+     <p>こんばんは
+     <?php endif; ?>
+      、ゲストさん</p>
       <ul>
-        <li>2016年1月の投稿</li>
-        <li>2016年2月の投稿</li>
-        <li>2016年3月の投稿</li>
-        <li>2016年4月の投稿</li>
-        <li>2016年5月の投稿</li>
-        <li>2016年6月の投稿</li>
-        <li>2016年7月の投稿</li>
-        <li>2016年8月の投稿</li>
-        <li>2016年9月の投稿</li>
-        <li>2016年10月の投稿</li>
-        <li>2016年11月の投稿</li>
-        <li>2016年12月の投稿</li>
+        <li><?php echo date("Y年m月"); ?>の投稿</li>
+        <li><?php echo date( "Y年m月" , strtotime('-1 month' , time()) ) ;?>の投稿</li>
+        <li><?php echo date( "Y年m月" , strtotime('-2 month' , time()) ) ;?>の投稿</li>
       </ul>
       
     </div>
     
     <div class="contents">
       <div class="contents-item">
-        <h1>こんにちは</h1>
+        <h1>Spanish Chorizo, Egg and Fotina Cheese on Croissant Bun</h1>
+        <img src="webroot/icon/coffee.png"><h2>starbucks</h2>
         <p>2016年12月20日</p>
       </div>
       
