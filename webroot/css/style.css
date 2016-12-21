@@ -80,6 +80,15 @@ ul {
   padding: 30px;
 }
 
+.ana {
+  color: #6c3524;
+  font-size: 16px;
+}
+
+.sidebar h2 {
+  color: #6c3524;
+  margin-top: 30px;
+}
 
 .sidebar li {
   color: #6c3524;
@@ -114,6 +123,7 @@ ul {
 .contents-item img {
   color: #7b5544;
   margin-left: 40px;
+  margin-top: 25px;
   float: left;
 }
 
